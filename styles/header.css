@@ -1,0 +1,18 @@
+header {
+    padding: 3.5rem 10rem 0 10rem;
+    margin-bottom: 10.25rem;
+    
+    & img {
+        margin-right: auto;
+        max-height: 3.625rem;
+        max-width: 14.375rem;
+        object-fit: contain;
+    }
+}
+
+@media (width < 50em) {
+    header {
+        padding: 1.25rem 1.25rem 0 1.25rem;
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,117 @@
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.mobile-only {
+    display: none;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animateCardMonth {
+    70% {
+        transform: translateX(-19rem) translateY(3rem) rotate(-8deg);
+    }
+
+    100% {
+        transform: translateX(-18rem) translateY(3rem)  rotate(-8deg);
+    }
+}
+
+@keyframes animateCardAnnual {
+    70% {
+        transform: translateX(19rem) translateY(1.9325rem) rotate(8deg); 
+    }
+
+    100% {
+        transform: translateX(18rem) translateY(1.9325rem) rotate(8deg);
+    }     
+}
+
+@keyframes animateCardWeekly {
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+@keyframes animateNotCardMonth {
+    0% {
+        transform: translateX(-18rem) translateY(3rem)  rotate(-8deg);
+    }
+
+    100% {
+        transform: translateX(0rem) translateY(0rem)  rotate(0deg);
+    }
+}
+
+@keyframes animateNotCardAnnual {
+    0% {
+        transform: translateX(18rem) translateY(1.9325rem) rotate(8deg);
+    }
+
+    100% {
+        transform: translateX(0rem) translateY(0rem)  rotate(0deg);
+    }   
+}
+
+@keyframes animateNotCardWeekly {
+
+    0% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes animationStarCardMonth {
+    100% {
+        translate: 1.6rem -.5rem;
+        /* transition: translateX(-15rem); */
+    }
+}
+
+@keyframes animationReverseStarCardMonth {
+    0% {
+        translate: 1.6rem -.5rem;
+    }
+
+    100% {
+        translate: 0rem 0rem;
+    }
+}
+
+@keyframes animationStarCardAnnual {
+    100% {
+        translate: .1rem -.6rem;
+    }
+}
+
+@keyframes animationReverseStarCardAnnual {
+    0% {
+        translate: .1rem -.6rem;
+    }
+
+    100% {
+        translate: 0rem 0rem;
+    }
+}
+
+@media (width < 50em) {
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: inherit;
+    }
+}
